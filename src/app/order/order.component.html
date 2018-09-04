@@ -1,0 +1,49 @@
+<div style="background-image: url('/assets/stock-photo-supermarket-aisle-with-empty-red-shopping-cart-541052647.v4.jpg');">
+  <div class="userItem">
+    <a class="active" href="/nav-bar"><strong>Shopping Cart</strong></a>
+    <a class ="order" href="/order">Your Order</a>
+    <a  class="item" href="/addItem">Add Items</a>
+  </div>
+  <br>
+  <div class="container">
+    <table class="table">
+      <tr>
+          
+          <th>Name</th>
+          <th>Qty</th>
+          <th>Cost</th>
+          <th>Total</th>
+          <th></th>
+      </tr>
+      <tr ng:repeat="item in invoice.items">
+          <td><input type="text" ng:model="item.name"class="input-small"></td>           
+          <td><input type="number" ng:model="item.qty" ng:required class="input-mini"></td>
+          <td><input type="number" ng:model="item.price" ng:required class="input-mini"></td>
+          <td>
+            <div class="col-sm-9">
+              <div class="row">
+                <div class="col-sm-3">
+                    <input type="text" readonly  class="form-control col-8 text-center bg-white font-weight-bold " id="counterval" value="{{counter}}" #Totalcartval>
+                </div>         
+                    <a class="btn btn-primary text-white" (click)="decrement()" role="button">
+                        <i class="fa fa-minus" style="font-size:15px"></i>
+                    </a>
+                    <div class="col-sm-1"></div>
+                    <a class="btn btn-primary text-white" (click)="increment()"  role="button">
+                        <i class="fa fa-plus" style="font-size:15px"></i>
+                    </a>            
+                    </div>
+                </div>
+          </td>
+          <td>
+              [<a href ng:click="removeItem($index)">X</a>]
+          </td>
+      </tr>
+      <tr>
+          <td>Total:</td>
+          <td></td>
+      </tr>
+  </table>
+  </div>
+
+</div>

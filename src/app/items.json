@@ -1,0 +1,31 @@
+[
+    {
+        "id" : "id1",
+        "name" : "Samsung galaxy J8",
+        "price" : "$399",
+        "internal memory": "64GB",
+        "RAM" : "4GB",
+        "front": "12+5mp",
+        "rear": "16mp"
+    },
+    
+    {   
+        "id" :"id2",
+        "name" : "Redmi Y2",
+        "price" : "$499",
+        "internal memory": "64GB",
+        "RAM" : "4GB",
+        "front": "16mp",
+        "rear": "16mp"
+    },
+    
+    {
+        "id" : "id3",
+        "name" : "Vivo V9",
+        "price" : "$499",
+        "internal memory": "64GB",
+        "RAM" : "4GB",
+        "front": "18mp",
+        "rear": "20mp"
+    }
+]

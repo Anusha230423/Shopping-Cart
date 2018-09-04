@@ -1,0 +1,31 @@
+<div style="background-image: url('/assets/stock-photo-supermarket-aisle-with-empty-red-shopping-cart-541052647.v4.jpg')">
+  <div class="main">
+    <a class="active" href="/nav-bar"><strong>Shopping Cart</strong></a>
+    <a class ="items" href="/login">Login</a>
+    <a  class="items" href="/signup">Sign Up</a>
+  </div>
+  <div class="register">
+    <form name="addForm" action="" ng-submit="addUser()" ng-controller="addContactController">
+        <div class="form-group">
+            <label class="input"><strong>Name:</strong></label> <br>
+            <input type="text" class="username" ng-model="Id" id="inputName1"  placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+          <label class="input"><strong>Email address:</strong></label> <br>
+          <input type="email" class="e-mail" ng-model="Name" id="inputEmail1"  placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label class="input"><strong>Password:</strong></label> <br>
+          <input type="password" class="pasword" ng-model="Email" id="inputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label class="input"><strong>Confirm Password:</strong></label> <br>
+          <input type="password" class="pasword" ng-model="Email" id="inputPassword2" placeholder="Confirm Password">
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Add</button>
+      </form>
+
+
+  </div>
+ </div>
